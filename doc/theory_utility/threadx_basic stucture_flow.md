@@ -2,7 +2,7 @@
 
 ThreadX is added by CubeMX to project on place
 
-The main acces point to Thread is is include for `tx_api.h`
+The main access point to Thread is include for `tx_api.h`
 
 ```c
 #include "tx_api.h"
@@ -21,6 +21,6 @@ Main file for user to handle is app_threadx.c where is need to create ThreadX it
 ## Program start flow
 
 ThreadX is called from main.c over `MX_AZURE_RTOS_Init` function. Inside is called `tx_kernel_enter` which will initialize ThreadX and start it.
-Before ThreadX is started. The `tx_application_define` is called where used can allocate his memory, create taskts and other itesms from ThreadX. After this function ends ThreadX is started.
+Before ThreadX is started, the `tx_application_define` is called where user can allocate his memory, create tasks and other items from ThreadX. After this function ends ThreadX is started.
 
 ![ThreadX init flow](./img/03.svg)
